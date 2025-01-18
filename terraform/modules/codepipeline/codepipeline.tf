@@ -1,6 +1,6 @@
 # CODEPIPELINE -----------------------------------------------------------------
 
-resource "aws_codepipeline" "main" {
+resource "aws_codepipeline" "codepipeline" {
   name          = "${var.resource_prefix}-pipeline"
   pipeline_type = "V2"
 
