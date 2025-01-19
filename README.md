@@ -27,3 +27,10 @@ https://docs.aws.amazon.com/dtconsole/latest/userguide/connections-update.html
 ## Blog post
 
 This example is part of the following blog post: https://dsalvagni.com/b/simplify-ecr-image-building-and-publishing-with-codepipeline/
+
+## Resources
+
+- [AWS Docs - Actions Variables](https://docs.aws.amazon.com/codepipeline/latest/userguide/actions-variables.html)
+- [AWS Docs - Variables reference](https://docs.aws.amazon.com/codepipeline/latest/userguide/reference-variables.html)
+- [AWS Docs - Git Connections](https://docs.aws.amazon.com/dtconsole/latest/userguide/connections.html)
+- [AWS Docs - IAM Permissions for CodePipeline](https://docs.aws.amazon.com/codepipeline/latest/userguide/security-iam.html)
