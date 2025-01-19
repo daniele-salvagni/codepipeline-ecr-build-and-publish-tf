@@ -16,7 +16,7 @@ resource "aws_codepipeline" "codepipeline" {
     action {
       name             = "Source"
       category         = "Source"
-      namespace        = "Source"
+      namespace        = "SourceVars"
       owner            = "AWS"
       provider         = "CodeStarSourceConnection"
       version          = 1
@@ -34,7 +34,7 @@ resource "aws_codepipeline" "codepipeline" {
     action {
       name            = "Build"
       category        = "Build"
-      namespace       = "Build"
+      namespace       = "BuildVars"
       owner           = "AWS"
       provider        = "ECRBuildAndPublish"
       version         = 1
@@ -43,7 +43,7 @@ resource "aws_codepipeline" "codepipeline" {
       configuration = {
         ECRRepositoryName = var.ecr_repo_name
         DockerFilePath    = var.dockerfile_path
-        ImageTags         = "#{Source.CommitId},latest"
+        ImageTags         = "#{SourceVars.CommitId},latest"
       }
     }
   }
