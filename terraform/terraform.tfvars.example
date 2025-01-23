@@ -3,3 +3,7 @@ env                 = "dev"
 source_codestar_arn = "my-codestar-arn"
 source_full_repo_id = "username/repository"
 source_branch_name  = "main"
+tags = {
+  "project" = "my-flask-container"
+  "env"     = "dev"
+}

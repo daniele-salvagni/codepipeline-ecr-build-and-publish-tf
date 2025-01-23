@@ -23,3 +23,9 @@ variable "source_branch_name" {
   default     = "main"
   description = "The branch to use for the source stage of the pipeline"
 }
+
+variable "tags" {
+  type        = map(string)
+  default     = {}
+  description = "A map of tags to apply to the resources"
+}
